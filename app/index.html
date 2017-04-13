@@ -9,8 +9,12 @@
     <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600,700" rel="stylesheet">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/reset-css/reset.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,6 +30,28 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <div class="header-wrapper u-clear">
+      <header class="header u-clear">
+        <div class="container">
+          <a href="#" class="header__logo">
+            <h2 class="text mod-semi-bold">Mobileapp</h2>
+          </a>
+          <!-- TODO: on click, on scroll, on key press -->
+          <nav class="header__nav" role="navigation">
+            <a href="#" tabindex="-1" class="header__link is-active text mod-small mod-bold">Home</a>
+            <!-- TODO: reconsider the usage of .text -->
+            <a href="#" class="header__link text mod-small mod-bold">Features</a>
+            <a href="#" class="header__link text mod-small mod-bold">Team</a>
+            <a href="#" class="header__link text mod-small mod-bold">Testimonials</a>
+            <a href="#" class="header__link text mod-small mod-bold">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="header__intro">
+      </section>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

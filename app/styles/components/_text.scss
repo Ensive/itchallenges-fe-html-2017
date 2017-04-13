@@ -1,0 +1,12 @@
+.text {
+
+  // weight
+  &.mod-semi-bold { font-weight: 600; }
+  &.mod-bold { font-weight: 700; }
+
+  // size (typography scale)
+  &.mod-small { font-size: 13px; }
+
+  // color
+  //&.mod-gray {}
+}

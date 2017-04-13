@@ -1,0 +1,64 @@
+.header-wrapper {
+  background: url('../images/header-bg.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  height: 80px;
+  margin: 29px auto 0;
+  max-width: 1240px;
+  width: 100%;
+}
+
+.header__logo {
+  color: $primary-color;
+  float: left;
+  font-family: $raleway;
+  font-size: 30px;
+  //line-height: 36px;
+  margin: 28px 0 0;
+  text-decoration: none;
+}
+
+.header__nav {
+  float: right;
+  font-size: 0;
+  margin: 38px 0 0;
+}
+
+.header__link {
+  color: rgba($base-color, .6);
+  margin: 0 40px 0 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &::before {
+    background-color: rgba($base-color, .6);
+    bottom: -2px;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: width .3s ease-out;
+    width: 0;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &.is-active {
+    color: $base-color;
+    pointer-events: none;
+  }
+}

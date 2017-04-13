@@ -2,7 +2,8 @@
   "name": "itchallenges-fe-html-2017",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "reset-css": "^2.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
