@@ -34,11 +34,11 @@
     <div class="header-wrapper u-clear">
       <header class="header u-clear">
         <div class="container">
-          <a href="#" class="header__logo">
+          <a href="#" class="header__logo u-left">
             <h2 class="text mod-semi-bold">Mobileapp</h2>
           </a>
           <!-- TODO: on click, on scroll, on key press -->
-          <nav class="header__nav" role="navigation">
+          <nav class="header__nav u-right" role="navigation">
             <a href="#" tabindex="-1" class="header__link is-active text mod-small mod-bold">Home</a>
             <!-- TODO: reconsider the usage of .text -->
             <a href="#" class="header__link text mod-small mod-bold">Features</a>
@@ -49,7 +49,22 @@
         </div>
       </header>
 
-      <section class="header__intro">
+      <section class="header__intro container">
+        <div class="intro__content u-left">
+          <h1 class="intro__title text mod-large mod-bold">Introducing Mobileapp.</h1>
+          <h2 class="intro__subtitle text mod-big mod-semi-bold">Maecenas vitae tellus sapien. Praesent</h2>
+          <ul class="intro__list">
+            <li class="intro__item">semper scelerisque tristique a enim</li>
+            <li class="intro__item">Integer ut mattis nulla, eget vehicula elit</li>
+            <li class="intro__item">Praesent rutrum ac nunc et</li>
+          </ul>
+          <button class="intro__btn">Download</button>
+        </div>
+
+        <div class="intro__img-wrapper u-right">
+          <figure class="intro__img mod-small"></figure>
+          <figure class="intro__img mod-big"></figure>
+        </div>
       </section>
     </div>
 

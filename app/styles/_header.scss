@@ -16,23 +16,21 @@
 
 .header__logo {
   color: $primary-color;
-  float: left;
   font-family: $raleway;
   font-size: 30px;
   //line-height: 36px;
-  margin: 28px 0 0;
+  margin: 25px 0 0;
   text-decoration: none;
 }
 
 .header__nav {
-  float: right;
   font-size: 0;
   margin: 38px 0 0;
 }
 
 .header__link {
   color: rgba($base-color, .6);
-  margin: 0 40px 0 0;
+  margin: 0 39px 0 0;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -53,6 +51,7 @@
     width: 0;
   }
 
+  &:focus::before,
   &:hover::before {
     width: 100%;
   }
