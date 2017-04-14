@@ -20,4 +20,12 @@
       display: none;
     }
   }
+
+  &.mod-white {
+    color: #fff;
+
+    &::after {
+      content: url('../../images/line-white.png');
+    }
+  }
 }

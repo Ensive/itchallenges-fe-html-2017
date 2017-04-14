@@ -4,6 +4,7 @@
 
 // base
 @import 'base/variables';
+@import 'base/fontello';
 @import 'base/utils';
 
 .browserupgrade {
@@ -43,6 +44,7 @@ img {
 // shared components
 @import 'components/text';
 @import 'components/title';
+@import 'components/input';
 
 // blocks
 @import 'header';
@@ -50,3 +52,6 @@ img {
 @import 'features';
 @import 'watch';
 @import 'team';
+@import 'customers';
+@import 'contact';
+@import 'footer';

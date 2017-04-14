@@ -1,0 +1,19 @@
+.input {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  color: #c1c1c1;
+  font-family: $open-sans;
+  font-size: 16px;
+  height: 44px;
+  line-height: 24px;
+  //max-width: 270px;
+  padding: 0 20px;
+
+  &.mod-textarea {
+    //max-width: 570px;
+    min-height: 179px;
+    padding: 15px 22px;
+    width: 100%;
+  }
+}
