@@ -41,15 +41,15 @@
           <nav class="header__nav u-right" role="navigation">
             <a href="#" tabindex="-1" class="header__link is-active text mod-small mod-bold">Home</a>
             <!-- TODO: reconsider the usage of .text -->
-            <a href="#" class="header__link text mod-small mod-bold">Features</a>
-            <a href="#" class="header__link text mod-small mod-bold">Team</a>
-            <a href="#" class="header__link text mod-small mod-bold">Testimonials</a>
-            <a href="#" class="header__link text mod-small mod-bold">Contact</a>
+            <a href="#features" class="header__link text mod-small mod-bold">Features</a>
+            <a href="#team" class="header__link text mod-small mod-bold">Team</a>
+            <a href="#testimonials" class="header__link text mod-small mod-bold">Testimonials</a>
+            <a href="#contact" class="header__link text mod-small mod-bold">Contact</a>
           </nav>
         </div>
       </header>
 
-      <section class="header__intro container">
+      <section class="header__intro container u-clear">
         <div class="intro__content u-left">
           <h1 class="intro__title text mod-large mod-bold">Introducing Mobileapp.</h1>
           <h2 class="intro__subtitle text mod-big mod-semi-bold">Maecenas vitae tellus sapien. Praesent</h2>
@@ -62,11 +62,98 @@
         </div>
 
         <div class="intro__img-wrapper u-right">
-          <figure class="intro__img mod-small"></figure>
-          <figure class="intro__img mod-big"></figure>
+          <figure class="intro__img mod-small js-iphone-img-small"></figure>
+          <figure class="intro__img mod-big js-iphone-img-big"></figure>
         </div>
       </section>
     </div>
+
+    <section class="features container u-clear">
+      <h2 class="title u-text-center">Key Features</h2>
+      <p class="features__intro text mod-medium u-text-center">
+        Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+      </p>
+      <div class="features__content u-clear">
+        <div class="features__block mod-first u-left">
+          <article class="features__item mod-person">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+          <article class="features__item mod-map">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+          <article class="features__item mod-like">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="features__block mod-image u-left u-text-center">
+          <img src="images/iphone-features.png" alt="" class="features__iphone" />
+        </div>
+
+        <div class="features__block mod-last u-right">
+          <article class="features__item mod-earphones">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+          <article class="features__item mod-point">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+          <article class="features__item mod-compass">
+            <div class="features__desc">
+              <h3 class="features__title text mod-medium mod-bold">Amet varius</h3>
+              <p class="features__text text mod-small">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="watch u-clear">
+      <div class="container">
+        <div class="watch__desc u-left">
+          <h2 class="watch__title title mod-black">Watch the video</h2>
+          <p class="watch__text text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+          </p>
+          <a href="#" class="watch__social-link"></a>
+          <a href="#" class="watch__social-link"></a>
+          <a href="#" class="watch__social-link"></a>
+        </div>
+
+        <div class="watch__container u-right">
+          <iframe src="https://player.vimeo.com/video/49780741?title=0&byline=0&portrait=0"
+                  width="100%"
+                  height="307"
+                  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -81,6 +168,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -45,6 +45,7 @@
 .intro__img {
   display: block;
   position: absolute;
+  transition: transform .3s ease-out, opacity .3s ease-out;
 
   &.mod-small {
     background: url('../images/iphone-small.png');

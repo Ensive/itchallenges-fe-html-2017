@@ -1,0 +1,59 @@
+.features__intro {
+  display: block;
+  line-height: 36px;
+  margin: 46px auto 0;
+  max-width: 900px;
+}
+
+.features__content {
+  margin: 89px 0 35px;
+}
+
+.features__block {
+  width: 30.769230769231%; // 360
+
+  &.mod-first,
+  &.mod-last {
+    padding: 62px 0 0;
+  }
+
+  &.mod-image {
+    width: 38.461538461538%; // 450
+  }
+}
+
+.features__item {
+  margin: 0 0 101px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &::before {
+    display: block;
+    float: left;
+    margin: 0 43px 0 10px;
+  }
+
+  &.mod-person::before { content: url('../images/icons/person.png'); }
+  &.mod-map::before { content: url('../images/icons/map.png'); }
+  &.mod-like::before { content: url('../images/icons/like.png'); }
+  &.mod-earphones::before { content: url('../images/icons/earphones.png'); }
+  &.mod-point::before { content: url('../images/icons/point.png'); }
+  &.mod-compass::before { content: url('../images/icons/compass.png'); }
+}
+
+.features__desc {
+  display: table-cell;
+}
+
+.features__title {
+  font-family: $raleway;
+  line-height: 18px;
+  margin: 0 0 12px;
+}
+
+.features__text {
+  line-height: 24px;
+  max-width: 243px;
+}

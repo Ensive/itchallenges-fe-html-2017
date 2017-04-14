@@ -2,6 +2,8 @@
   background: url('../images/header-bg.jpg');
   background-size: cover;
   height: 100%;
+  margin: 0 0 114px;
+  min-height: 758px;
   width: 100%;
 }
 
@@ -25,7 +27,7 @@
 
 .header__nav {
   font-size: 0;
-  margin: 38px 0 0;
+  margin: 37px 0 0;
 }
 
 .header__link {

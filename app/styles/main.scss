@@ -42,7 +42,10 @@ img {
 
 // shared components
 @import 'components/text';
+@import 'components/title';
 
 // blocks
 @import 'header';
 @import 'intro';
+@import 'features';
+@import 'watch';
