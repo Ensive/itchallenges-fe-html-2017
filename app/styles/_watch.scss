@@ -1,7 +1,6 @@
 .watch {
   background-color: #31d4e7;
   min-height: 447px;
-  padding: 74px 0 0;
   width: 100%;
 }
 
@@ -10,14 +9,14 @@
 }
 
 .watch__title {
-  margin: 0 0 25px;
+  margin: 68px 0 9px;
 }
 
 .watch__text {
   color: #fff;
   line-height: 26px;
-  margin: 0 0 29px;
-  max-width: 537px;
+  margin: 0 0 23px;
+  max-width: 540px;
 }
 
 .watch__social-link {
@@ -38,6 +37,7 @@
 }
 
 .watch__container {
+  margin: 73px 0 0;
   border-radius: 8px;
   max-width: 500px;
   overflow: hidden;
