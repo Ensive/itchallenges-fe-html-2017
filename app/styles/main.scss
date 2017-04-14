@@ -1,11 +1,13 @@
 // bower:scss
 @import "bower_components/reset-css/_reset.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 // base
 @import 'base/variables';
 @import 'base/fontello';
 @import 'base/utils';
+@import 'base/slick';
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -47,11 +49,11 @@ img {
 @import 'components/input';
 
 // blocks
-@import 'header';
-@import 'intro';
-@import 'features';
-@import 'watch';
-@import 'team';
-@import 'customers';
-@import 'contact';
-@import 'footer';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/features';
+@import 'blocks/watch';
+@import 'blocks/team';
+@import 'blocks/customers';
+@import 'blocks/contact';
+@import 'blocks/footer';

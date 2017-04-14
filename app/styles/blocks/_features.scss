@@ -35,12 +35,12 @@
     margin: 0 43px 0 10px;
   }
 
-  &.mod-person::before { content: url('../images/icons/person.png'); }
-  &.mod-map::before { content: url('../images/icons/map.png'); }
-  &.mod-like::before { content: url('../images/icons/like.png'); }
-  &.mod-earphones::before { content: url('../images/icons/earphones.png'); }
-  &.mod-point::before { content: url('../images/icons/point.png'); }
-  &.mod-compass::before { content: url('../images/icons/compass.png'); }
+  &.mod-person::before { content: url('../../images/icons/person.png'); }
+  &.mod-map::before { content: url('../../images/icons/map.png'); }
+  &.mod-like::before { content: url('../../images/icons/like.png'); }
+  &.mod-earphones::before { content: url('../../images/icons/earphones.png'); }
+  &.mod-point::before { content: url('../../images/icons/point.png'); }
+  &.mod-compass::before { content: url('../../images/icons/compass.png'); }
 }
 
 .features__desc {

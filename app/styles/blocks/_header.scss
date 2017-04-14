@@ -1,10 +1,17 @@
 .header-wrapper {
-  background: url('../images/header-bg.jpg');
+  background: url('../../images/header-bg.jpg');
   background-size: cover;
-  height: 100%;
+  height: auto;
   margin: 0 0 114px;
-  min-height: 758px;
+  padding: 0 0 50px;
+  min-height: 0;
   width: 100%;
+
+  @media (min-width: $medium-screen-up) {
+    padding: 0;
+    height: 100%;
+    min-height: 758px;
+  }
 }
 
 .header {
@@ -20,14 +27,18 @@
   color: $primary-color;
   font-family: $raleway;
   font-size: 30px;
-  //line-height: 36px;
   margin: 25px 0 0;
   text-decoration: none;
 }
 
 .header__nav {
+  display: none;
   font-size: 0;
   margin: 37px 0 0;
+
+  @media (min-width: $medium-screen-up) {
+    display: block;
+  }
 }
 
 .header__link {

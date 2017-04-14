@@ -15,6 +15,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/reset-css/reset.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -58,7 +59,9 @@
             <li class="intro__item">Integer ut mattis nulla, eget vehicula elit</li>
             <li class="intro__item">Praesent rutrum ac nunc et</li>
           </ul>
-          <button class="intro__btn">Download</button>
+          <button class="intro__btn">
+            <span class="text u-left">Download</span>
+          </button>
         </div>
 
         <div class="intro__img-wrapper u-right">
@@ -68,7 +71,7 @@
       </section>
     </div>
 
-    <section class="features container u-clear">
+    <section id="features" class="features container u-clear">
       <h2 class="title u-text-center">Key Features</h2>
       <p class="features__intro text mod-medium u-text-center">
         Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
@@ -141,9 +144,9 @@
           <p class="watch__text text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
           </p>
-          <a href="#" class="watch__social-link"></a>
-          <a href="#" class="watch__social-link"></a>
-          <a href="#" class="watch__social-link"></a>
+          <a href="#" class="watch__social-link mod-apple"></a>
+          <a href="#" class="watch__social-link mod-android"></a>
+          <a href="#" class="watch__social-link mod-windows"></a>
         </div>
 
         <div class="watch__container u-right">
@@ -155,7 +158,7 @@
       </div>
     </section>
 
-    <section class="team container u-clear">
+    <section id="team" class="team container u-clear">
       <h2 class="team__title title u-text-center">Our Team</h2>
       <p class="team__intro text mod-bold u-text-center">
         Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
@@ -168,9 +171,9 @@
             <h4 class="team__subtitle text mod-regular mod-bold">Aenean ut suscipit urna. Donec efficitur</h4>
             <p class="team__desc text mod-regular">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
             <div class="team__social">
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
+              <a href="#" class="team__link mod-twitter"></a>
+              <a href="#" class="team__link mod-facebook"></a>
+              <a href="#" class="team__link mod-google"></a>
             </div>
           </div>
         </div>
@@ -185,9 +188,9 @@
             <h4 class="team__subtitle text mod-regular mod-bold">Aenean ut suscipit urna. Donec efficitur</h4>
             <p class="team__desc text mod-regular">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
             <div class="team__social">
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
+              <a href="#" class="team__link mod-twitter"></a>
+              <a href="#" class="team__link mod-facebook"></a>
+              <a href="#" class="team__link mod-google"></a>
             </div>
           </div>
         </div>
@@ -202,9 +205,9 @@
             <h4 class="team__subtitle text mod-regular mod-bold">Aenean ut suscipit urna. Donec efficitur</h4>
             <p class="team__desc text mod-regular">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
             <div class="team__social">
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
+              <a href="#" class="team__link mod-twitter"></a>
+              <a href="#" class="team__link mod-facebook"></a>
+              <a href="#" class="team__link mod-google"></a>
             </div>
           </div>
         </div>
@@ -219,9 +222,9 @@
             <h4 class="team__subtitle text mod-regular mod-bold">Aenean ut suscipit urna. Donec efficitur</h4>
             <p class="team__desc text mod-regular">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
             <div class="team__social">
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
-              <a href="#" class="team__link"></a>
+              <a href="#" class="team__link mod-twitter"></a>
+              <a href="#" class="team__link mod-facebook"></a>
+              <a href="#" class="team__link mod-google"></a>
             </div>
           </div>
         </div>
@@ -230,10 +233,10 @@
       </div>
     </section>
 
-    <section class="customers">
+    <section id="testimonials" class="customers">
       <h2 class="customers__title title u-text-center">What our customer’s say</h2>
 
-      <div class="customers__container">
+      <div class="customers__container js-carousel">
         <div class="customer__item u-text-center">
           <figure class="customer__photo">
             <img src="images/customer-photo.png" alt="Jon Doe">
@@ -247,13 +250,52 @@
           </blockquote>
         </div>
 
-        <!-- switchers -->
+        <div class="customer__item u-text-center">
+          <figure class="customer__photo">
+            <img src="images/customer-photo.png" alt="Jon Doe">
+            <figcaption>
+              <span class="customer__name text mod-medium mod-bold">Jon Doe</span>
+              <span class="customer__company text mod-small">Company Inc.</span>
+            </figcaption>
+          </figure>
+          <blockquote class="customer__quote text mod-medium">
+            Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
+          </blockquote>
+        </div>
+
+        <div class="customer__item u-text-center">
+          <figure class="customer__photo">
+            <img src="images/customer-photo.png" alt="Jon Doe">
+            <figcaption>
+              <span class="customer__name text mod-medium mod-bold">Jon Doe</span>
+              <span class="customer__company text mod-small">Company Inc.</span>
+            </figcaption>
+          </figure>
+          <blockquote class="customer__quote text mod-medium">
+            Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
+          </blockquote>
+        </div>
+
+        <div class="customer__item u-text-center">
+          <figure class="customer__photo">
+            <img src="images/customer-photo.png" alt="Jon Doe">
+            <figcaption>
+              <span class="customer__name text mod-medium mod-bold">Jon Doe</span>
+              <span class="customer__company text mod-small">Company Inc.</span>
+            </figcaption>
+          </figure>
+          <blockquote class="customer__quote text mod-medium">
+            Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
+          </blockquote>
+        </div>
       </div>
+
+      <div class="customers__switchers u-clear js-carousel-dots"></div>
 
     </section>
 
     <div class="bottom-wrapper">
-      <section class="contact container u-clear">
+      <section id="contact" class="contact container u-clear">
         <h2 class="contact__title title mod-white u-text-center">Contact Us</h2>
 
         <div class="contact__container u-clear">
@@ -277,6 +319,7 @@
           </div>
 
           <div class="contact__form-wrapper u-right">
+            <!-- TODO: validation -->
             <form action="#">
               <fieldset class="contact__form-fieldset u-clear">
                 <input name="name" class="input u-left" type="text" placeholder="Name" />
@@ -316,11 +359,13 @@
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/slick.js"></script>
     <!-- endbuild -->
   </body>
 </html>
