@@ -24,15 +24,15 @@
   position: relative;
 
   &::before {
-    font-family: 'fontello';
+    color: #fff;
     content: '\e800';
     display: block;
-    position: absolute;
-    left: -23px;
-    top: 1px;
-    color: #fff;
+    font-family: 'fontello';
     font-size: 28px;
+    left: -23px;
+    position: absolute;
     text-transform: uppercase;
+    top: 1px;
   }
 }
 
@@ -56,16 +56,16 @@
   font-family: $open-sans;
   font-size: 20px;
   height: 49px;
-  margin: 70px 0 0 10px;
-  width: 212px;
   line-height: 49px;
+  margin: 70px 0 0 10px;
   padding: 0 0 0 22px;
+  width: 212px;
 
   &::before {
     content: url('../../images/icons/download.png');
-    margin: 8px 20px 0 0;
     display: block;
     float: left;
+    margin: 8px 20px 0 0;
   }
 }
 
@@ -84,33 +84,37 @@
 
 .intro__img {
   display: block;
+  opacity: 0;
   position: absolute;
-  transition: transform .3s ease-out, opacity .3s ease-out;
+  transform: translate(50%, 0);
+  transition: transform 1s ease-out, opacity .8s ease-out;
 
   &.mod-small {
-    display: none;
     background: url('../../images/iphone-small.png');
+    display: none;
     height: 600px;
     right: 152px;
     top: 174px;
     width: 346px;
     z-index: 1;
 
-    @media (min-width: $large-screen-up) {
-      display: block;
-    }
+    @media (min-width: $large-screen-up) { display: block; }
   }
 
   &.mod-big {
-    display: none;
     background: url('../../images/iphone-big.png');
+    display: none;
     height: 663px;
     right: 45px;
     top: 110px;
+    transition-delay: .5s;
     width: 382px;
 
-    @media (min-width: $medium-screen-up) {
-      display: block;
-    }
+    @media (min-width: $medium-screen-up) { display: block; }
+  }
+
+  &.is-shown {
+    opacity: 1;
+    transform: translate(0);
   }
 }
