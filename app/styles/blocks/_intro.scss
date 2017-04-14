@@ -58,7 +58,12 @@
   height: 49px;
   line-height: 49px;
   margin: 70px 0 0 10px;
+  opacity: 0;
+  overflow: hidden;
   padding: 0 0 0 22px;
+  transform: translate(0, 75%);
+  transition: transform .8s ease-out, opacity .6s ease-out;
+  transition-delay: 1s;
   width: 212px;
 
   &::before {
@@ -66,6 +71,11 @@
     display: block;
     float: left;
     margin: 8px 20px 0 0;
+  }
+
+  &.is-shown {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 

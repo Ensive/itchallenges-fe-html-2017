@@ -1,6 +1,7 @@
 (function ($) {
   'use strict';
 
+  const $downloadLink = $('.js-download-link');
   const $iphoneImgSmall = $('.js-iphone-img-small');
   const $iphoneImgBig = $('.js-iphone-img-big');
   const $navLink = $('.js-nav-link');
@@ -11,6 +12,7 @@
   function init () {
     $iphoneImgSmall.addClass('is-shown');
     $iphoneImgBig.addClass('is-shown');
+    $downloadLink.addClass('is-shown');
     $navLink.on('click', handleNavigation);
     // $(window).on('scroll', handleScroll);
   }
